@@ -4,20 +4,27 @@
  * and open the template in the editor.
  */
 package j08;
-
+import java.util.Scanner;
 public class Contoh02 {
     public static void main(String[] args)
     {
-        // PERULANGAN FOR
+        Scanner baca = new Scanner(System.in);
+        
         int x;
-        for(x = 1; x <=10; x++)
+        int y;
+        
+        System.out.print("Silahkan Masukkan Bilangan : ");
+        y = baca.nextInt();
+        
+        // PERULANGAN FOR
+        for(x = 1; x <= y; x++)
         {
             System.out.print(x + " ");
         }
         
         //PERULANGAN WHILE
         x = 1;
-        while(x <= 10)
+        while(x <= y)
         {
             System.out.print(x + " ");
             x++;
@@ -30,6 +37,6 @@ public class Contoh02 {
             System.out.print(x + " ");
             x++;
         }
-        while(x <= 10);
+        while(x <= y);
     }
 }
